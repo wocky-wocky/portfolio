@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ілля — веб-розробка та перевірка сайтів</title>
+<meta name="description" content="Лендинги, невеликі сайти, правки чинних сайтів і перевірка сайтів зі списком проблем. Кейс: B2B-платформа Bliss Club.">
+<meta property="og:title" content="Ілля — веб-розробка та перевірка сайтів">
+<meta property="og:description" content="Лендинги, невеликі сайти, правки чинних сайтів і перевірка сайтів. Кейс: B2B-платформа Bliss Club.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/desktop-home.png">
+<style>
+:root{
+  --bg:#faf8f4; --ink:#1b1b1f; --muted:#5d5d66; --line:#e3dfd6; --card:#ffffff;
+  --accent:#0f6b5c; --accent-ink:#ffffff;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#141416; --ink:#f1efe9; --muted:#a4a4ad; --line:#2c2c31; --card:#1c1c20; --accent:#4fc3ad; --accent-ink:#0b1512}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:12px}
+.brand{font-weight:700;letter-spacing:-.01em}
+.lang{display:flex;gap:6px}
+.lang button{font:inherit;font-size:14px;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.lang button:focus-visible,a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hero{padding:48px 0 32px}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px}
+h2{font-size:1.6rem;letter-spacing:-.01em;margin:0 0 16px}
+h3{font-size:1.1rem;margin:0 0 6px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:640px}
+.btn{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:10px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600}
+section{padding:40px 0;border-top:1px solid var(--line)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+ul.clean{padding-left:20px;margin:8px 0}
+ul.clean li{margin:4px 0}
+.shots{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:20px}
+figure{margin:0}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+figure.phone img{max-width:240px;margin:0 auto}
+figcaption{font-size:.9rem;color:var(--muted);margin-top:6px;text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:12px 0}
+.tags li{font-size:.9rem;border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:999px}
+.note{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted)}
+footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+[data-l]{display:none}
+html[lang="uk"] [data-l="uk"],html[lang="en"] [data-l="en"]{display:revert}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <span class="brand"><span data-l="uk">Ілля</span><span data-l="en">Illia</span></span>
+  <div class="lang" role="group" aria-label="Language / Мова">
+    <button type="button" data-set="uk" aria-pressed="true">UA</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="border-top:0">
+  <h1 data-l="uk">Сайти, які працюють і які можна перевірити</h1>
+  <h1 data-l="en">Websites that work and can be verified</h1>
+  <p class="lead" data-l="uk">Роблю лендинги й невеликі сайти, виправляю чинні сайти та перевіряю їх зі списком проблем. Пишу письмово, здаю з інструкцією перевірки й чесним звітом про те, що перевірено, а що ні.</p>
+  <p class="lead" data-l="en">I build landing pages and small sites, fix existing ones, and review sites with a clear list of issues. I work in writing and hand over with a check guide and an honest report of what was and was not verified.</p>
+  <a class="btn" href="#contact" data-l="uk">Обговорити задачу</a>
+  <a class="btn" href="#contact" data-l="en">Discuss a task</a>
+</section>
+
+<section id="services">
+  <h2 data-l="uk">Що роблю</h2>
+  <h2 data-l="en">What I do</h2>
+  <div class="grid">
+    <article class="card">
+      <h3 data-l="uk">Лендинг або невеликий сайт</h3><h3 data-l="en">Landing page or small site</h3>
+      <p data-l="uk">Погоджена структура, адаптивний вигляд, контактна форма, що справді доставляє повідомлення, базові метадані, публікація.</p>
+      <p data-l="en">Agreed structure, responsive layout, a contact form that actually delivers messages, basic metadata, deployment.</p>
+    </article>
+    <article class="card">
+      <h3 data-l="uk">Правки чинного сайту</h3><h3 data-l="en">Fixes to an existing site</h3>
+      <p data-l="uk">Адаптивність, верстка, форми, окремі помилки інтерфейсу, невеликі погоджені функції. У окремій гілці, без перепису всього.</p>
+      <p data-l="en">Responsive issues, layout, forms, individual UI bugs, small agreed features. In a separate branch, without rewriting everything.</p>
+    </article>
+    <article class="card">
+      <h3 data-l="uk">Перевірка сайту</h3><h3 data-l="en">Site review</h3>
+      <p data-l="uk">Список проблем з відтворенням кроків і пріоритетами; виправлення — окремо, за погодженням. Це не аудит безпеки.</p>
+      <p data-l="en">A list of issues with reproduction steps and priorities; fixes are agreed separately. This is not a security audit.</p>
+    </article>
+    <article class="card">
+      <h3 data-l="uk">Простий сайт-каталог</h3><h3 data-l="en">Simple catalog site</h3>
+      <p data-l="uk">Погоджені сторінки й обсяг, пошук і фільтри за чіткими вимогами. Платежі та складні інтеграції — лише після окремої оцінки.</p>
+      <p data-l="en">Agreed pages and scope, search and filters per clear requirements. Payments and complex integrations only after a separate estimate.</p>
+    </article>
+  </div>
+  <p class="note" data-l="uk">Умови, строки й ціна узгоджуються письмово під кожну задачу: обсяг, критерії приймання, кількість раундів правок, схема оплати.</p>
+  <p class="note" data-l="en">Terms, timeline and price are agreed in writing for each task: scope, acceptance criteria, number of revision rounds, payment schedule.</p>
+</section>
+
+<section id="case">
+  <h2 data-l="uk">Кейс: Bliss Club — B2B-платформа оптових поставок</h2>
+  <h2 data-l="en">Case study: Bliss Club — B2B wholesale platform</h2>
+  <p data-l="uk">Український оптовий постачальник працює з сотнями магазинів-партнерів. Потрібна була єдина система: партнер бачить свої ціни, залишки й баланс та оформлює замовлення; компанія керує каталогом, знижками й обліком без ручного перенесення даних. Я — власник і розробник продукту; працював із AI-асистентом Claude Code, а вимоги, рішення й перевірка поведінки — мої. Сайт: <a href="https://bliss-club.com/" rel="noopener">bliss-club.com</a>.</p>
+  <p data-l="en">A Ukrainian wholesale supplier works with hundreds of partner shops. They needed one system: a partner sees their own prices, stock and balance and places orders; the company manages the catalog, discounts and accounting without copying data by hand. I am the owner and developer of the product; I built it with the AI assistant Claude Code, while requirements, decisions and behavior checks are mine. Site: <a href="https://bliss-club.com/" rel="noopener">bliss-club.com</a>.</p>
+
+  <h3 data-l="uk">Що реалізовано (підтверджено кодом)</h3><h3 data-l="en">What was built (confirmed by code)</h3>
+  <ul class="clean" data-l="uk">
+    <li>Кабінет партнера: замовлення, адреси, баланс і оплати; ціни й залишки лише для авторизованих (перевірка на сервері).</li>
+    <li>Каталог із пошуком і фільтрами, індивідуальні та групові знижки, інтерфейс українською й російською, мобільна адаптація.</li>
+    <li>Адмін-панель із ролями доступу: замовлення, товари, бренди, партнери, статистика, ревізія складу за штрихкодами.</li>
+    <li>Синхронізація з обліковою системою Dilovod, доставка Новою Поштою, автоматичні вигрузки каталогу для маркетплейсів.</li>
+    <li>Telegram-бот для партнерів; фонові задачі за розкладом; деплой з миттєвим відкатом.</li>
+  </ul>
+  <ul class="clean" data-l="en">
+    <li>Partner account: orders, addresses, balance and payments; prices and stock only for signed-in users (enforced on the server).</li>
+    <li>Catalog with search and filters, personal and group discounts, Ukrainian and Russian interface, mobile-friendly layout.</li>
+    <li>Admin panel with access roles: orders, products, brands, partners, statistics, warehouse stocktake by barcode.</li>
+    <li>Sync with the Dilovod accounting system, Nova Poshta delivery, automated catalog exports for marketplaces.</li>
+    <li>Partner Telegram bot; scheduled background jobs; deployment with instant rollback.</li>
+  </ul>
+
+  <ul class="tags" aria-label="Stack">
+    <li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Redis / BullMQ</li><li>Tailwind CSS</li><li>Cloudflare R2</li><li>Nginx + PM2</li>
+  </ul>
+  <p data-l="uk">Масштаб коду: ≈95 тис. рядків TypeScript, 168 серверних маршрутів, 81 міграція БД, 611 комітів (січень–жовтень 2026).</p>
+  <p data-l="en">Codebase size: ≈95k lines of TypeScript, 168 server routes, 81 database migrations, 611 commits (Jan–Oct 2026).</p>
+
+  <div class="shots">
+    <figure><img src="img/desktop-home.png" width="1440" height="900" loading="lazy" alt="Головна сторінка Bliss Club на комп'ютері: заголовок про оптові закупівлі, кнопки каталогу, ілюстрація складу з магазинами / Bliss Club home page on desktop"><figcaption data-l="uk">Головна, комп'ютер</figcaption><figcaption data-l="en">Home, desktop</figcaption></figure>
+    <figure><img src="img/desktop-brands.png" width="1440" height="900" loading="lazy" alt="Сторінка брендів із пошуком і сіткою карток / Brands page with search and card grid"><figcaption data-l="uk">Бренди з пошуком</figcaption><figcaption data-l="en">Brands with search</figcaption></figure>
+    <figure><img src="img/desktop-delivery.png" width="1440" height="900" loading="lazy" alt="Сторінка умов доставки з графіком відправок / Delivery terms page with dispatch schedule"><figcaption data-l="uk">Умови доставки</figcaption><figcaption data-l="en">Delivery terms</figcaption></figure>
+    <figure class="phone"><img src="img/mobile-home.png" width="780" loading="lazy" alt="Головна сторінка Bliss Club на телефоні / Bliss Club home page on a phone"><figcaption data-l="uk">Головна, телефон</figcaption><figcaption data-l="en">Home, phone</figcaption></figure>
+    <figure class="phone"><img src="img/mobile-brands.png" width="780" loading="lazy" alt="Сторінка брендів на телефоні у дві колонки / Brands page on a phone in two columns"><figcaption data-l="uk">Бренди, телефон</figcaption><figcaption data-l="en">Brands, phone</figcaption></figure>
+    <figure class="phone"><img src="img/mobile-delivery.png" width="780" loading="lazy" alt="Сторінка доставки на телефоні / Delivery page on a phone"><figcaption data-l="uk">Доставка, телефон</figcaption><figcaption data-l="en">Delivery, phone</figcaption></figure>
+  </div>
+
+  <p class="note" data-l="uk">Чесні обмеження: у проєкті немає автоматичних тестів, перевірка велася вручну. Результати бізнесу (продажі, конверсія) я не заявляю. Закриті розділи (каталог із цінами, кабінет, адмінка) публічно не показую.</p>
+  <p class="note" data-l="en">Honest limits: the project has no automated tests; checks were done by hand. I do not claim business results (sales, conversion). Private areas (priced catalog, account, admin) are not shown publicly.</p>
+</section>
+
+<section id="process">
+  <h2 data-l="uk">Як я працюю</h2><h2 data-l="en">How I work</h2>
+  <ul class="clean" data-l="uk">
+    <li>Спочатку короткий бриф і критерії приймання, потім робота невеликими перевірюваними частинами.</li>
+    <li>Спілкуюся письмово; дзвінки й відеозустрічі не проводжу.</li>
+    <li>Кожна здача: посилання на перегляд, кроки перевірки, фактичний звіт «пройдено / не перевірено», відомі обмеження.</li>
+    <li>Користуюся AI-інструментами й кажу про це прямо; кожну зміну перевіряю й відповідаю за результат.</li>
+    <li>Нові вимоги оцінюються окремо; без прихованих змін і без залежності сайту від мого акаунта.</li>
+  </ul>
+  <ul class="clean" data-l="en">
+    <li>A short brief and acceptance criteria first, then work in small, verifiable parts.</li>
+    <li>I communicate in writing; I do not do calls or video meetings.</li>
+    <li>Every handover: a preview link, check steps, a factual "passed / not verified" report, known limitations.</li>
+    <li>I use AI tools and say so openly; I check every change and stand behind the result.</li>
+    <li>New requirements are estimated separately; no hidden changes, and the site never depends on my personal account.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2 data-l="uk">Контакт</h2><h2 data-l="en">Contact</h2>
+  <p data-l="uk">Опишіть задачу двома-трьома реченнями: що потрібно, для кого і до якої дати. Я відповім із уточненнями та орієнтовною оцінкою.</p>
+  <p data-l="en">Describe the task in two or three sentences: what you need, for whom and by when. I will reply with questions and a rough estimate.</p>
+  <p><a href="mailto:kshevdunskyi2021@gmail.com">kshevdunskyi2021@gmail.com</a></p>
+</section>
+</main>
+
+<footer>
+  <span data-l="uk">© 2026 Ілля</span><span data-l="en">© 2026 Illia</span>
+</footer>
+</div>
+
+<script>
+(function () {
+  var html = document.documentElement;
+  var buttons = document.querySelectorAll('.lang button');
+  function setLang(l) {
+    html.lang = l;
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === l)); });
+    document.title = l === 'uk'
+      ? 'Ілля — веб-розробка та перевірка сайтів'
+      : 'Illia — web development and site review';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.set); }); });
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var guess = saved || ((navigator.language || 'uk').slice(0, 2) === 'uk' ? 'uk' : 'en');
+  setLang(guess === 'en' ? 'en' : 'uk');
+})();
+</script>
+</body>
+</html>

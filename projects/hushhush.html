@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="theme-hush">
+<div class="progress" aria-hidden="true"></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 3-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M17 14c2.6 0 4.5 1.7 4.5 4.5"/></symbol>
   <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol>
@@ -186,14 +187,16 @@
     <div class="proj-visual viewer">
       <div class="browser">
         <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>hushhush.com.ua</span></div>
+        <div class="stack">
         <img data-v="home" src="../img/hh-desktop-home.png" width="1440" height="900" alt="Головна сторінка hushhush на комп'ютері: темний банер, заголовок і кнопки каталогу та гіда / hushhush home page on desktop">
-        <img data-v="catalog" src="../img/hh-desktop-catalog.png" width="1440" height="900" loading="lazy" hidden alt="Каталог hushhush: плитки розділів зі стилізованими фото / hushhush catalog with section tiles">
-        <img data-v="gid" src="../img/hh-desktop-gid.png" width="1440" height="900" loading="lazy" hidden alt="Сторінка гіда з догляду й безпеки / Care and safety guide page">
+        <img data-v="catalog" src="../img/hh-desktop-catalog.png" width="1440" height="900" loading="lazy" class="off" aria-hidden="true" alt="Каталог hushhush: плитки розділів зі стилізованими фото / hushhush catalog with section tiles">
+        <img data-v="gid" src="../img/hh-desktop-gid.png" width="1440" height="900" loading="lazy" class="off" aria-hidden="true" alt="Сторінка гіда з догляду й безпеки / Care and safety guide page">
+        </div>
       </div>
-      <div class="phone">
+      <div class="phone stack">
         <img data-v="home" src="../img/hh-mobile-home.png" width="780" height="1328" alt="Головна hushhush на телефоні / hushhush home page on a phone">
-        <img data-v="catalog" src="../img/hh-mobile-catalog.png" width="780" height="1328" loading="lazy" hidden alt="Каталог hushhush на телефоні у дві колонки / hushhush catalog on a phone in two columns">
-        <img data-v="gid" src="../img/hh-mobile-gid.png" width="780" height="1328" loading="lazy" hidden alt="Гід на телефоні / Guide page on a phone">
+        <img data-v="catalog" src="../img/hh-mobile-catalog.png" width="780" height="1328" loading="lazy" class="off" aria-hidden="true" alt="Каталог hushhush на телефоні у дві колонки / hushhush catalog on a phone in two columns">
+        <img data-v="gid" src="../img/hh-mobile-gid.png" width="780" height="1328" loading="lazy" class="off" aria-hidden="true" alt="Гід на телефоні / Guide page on a phone">
       </div>
     </div>
   </div>
